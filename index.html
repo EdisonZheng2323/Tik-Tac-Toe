@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+  <dialog id = "pop-up">
+    <form id = "form" method = "dialog">
+      <label for = "name1"> Player1 Name <span style="position: relative; top: -5px;">*</span> : </label>
+      <input type = "text" id = "name1" name = "playerName1" required>
+      <label for = "name2"> Player2 Name <span style="position: relative; top: -5px;">*</span> : </label>
+      <input type = "text" id = "name2" name = "playerName2" required>
+      <button id = "submit" type = "submit"> Start Game </button>
+    </form>
+  </dialog>
+  <dialog id = "end" hidden>
+    <div id = "result"> </div>
+    <button id = "restart"> Restart Game? </button>
+  </dialog>
+  <h1 class = "score"> Score: 0 - 0 </h1>
+  <div class = "board">
+    <button class="card" id="1"></button>
+    <button class="card" id="2"></button>
+    <button class="card" id="3"></button>
+    <button class="card" id="4"></button>
+    <button class="card" id="5"></button>
+    <button class="card" id="6"></button>
+    <button class="card" id="7"></button>
+    <button class="card" id="8"></button>
+    <button class="card" id="9"></button>
+  </div>
+  <script src = "javascript.js"></script>
+</body>
+</html>
